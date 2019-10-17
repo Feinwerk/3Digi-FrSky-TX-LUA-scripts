@@ -615,7 +615,7 @@ protocol.TDSaveParameter = function()
 	return true
     end
 --< simulator
-    return sportTelemetryPush(TD_RX_SENSOR_ID, REQUEST_FRAME_ID_SAVE_PARAMETER, 0, 0)
+    return sportTelemetryPush(TD_RX_SENSOR_ID, REQUEST_FRAME_ID_SAVE_PARAMETER, 1, 0)
 end
 
 
@@ -633,7 +633,7 @@ protocol.TDGetVersion = function()
 	return true
     end
 --< simulator
-    return sportTelemetryPush(TD_RX_SENSOR_ID, REQUEST_FRAME_ID_GET_VERSION, 0, 0)
+    return sportTelemetryPush(TD_RX_SENSOR_ID, REQUEST_FRAME_ID_GET_VERSION, 1, 0)
 end
 
 
