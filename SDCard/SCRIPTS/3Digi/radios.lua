@@ -54,6 +54,7 @@ local supportedRadios =
     ["x9e"] = supportedPlatforms.x9,
     ["x10"] = supportedPlatforms.horus,
     ["x12s"] = supportedPlatforms.horus,
+    ["t16"] = supportedPlatforms.horus,
 }
 
 local ver, rad, maj, min, rev = getVersion()
