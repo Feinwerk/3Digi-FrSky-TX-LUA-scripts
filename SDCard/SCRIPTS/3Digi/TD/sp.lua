@@ -575,7 +575,7 @@ protocol.TDGetValueSet = function(ValueSet)
 	return true
     end
 --< simulator
-    return sportTelemetryPush(TD_RX_SENSOR_ID, REQUEST_FRAME_ID_GET_VALUE_SET, ValueSet, 0)
+    return sportTelemetryPush(TD_RX_SENSOR_ID, REQUEST_FRAME_ID_GET_VALUE_SET, (ValueSet + 1), 0)
 end
 
 
@@ -597,7 +597,7 @@ protocol.TDSetValue = function(ValueId, Value)
 	return true
     end
 --< simulator
-    return sportTelemetryPush(TD_RX_SENSOR_ID, REQUEST_FRAME_ID_SET_VALUE, ValueId, Value)
+    return sportTelemetryPush(TD_RX_SENSOR_ID, REQUEST_FRAME_ID_SET_VALUE, (ValueId + 1), Value)
 end
 
 
