@@ -11,7 +11,7 @@ FrSkySportSensor3DigiRx::FrSkySportSensor3DigiRx(SensorId id) : FrSkySportSensor
 uint16_t FrSkySportSensor3DigiRx::decodeData(uint8_t sId, uint16_t aId, uint32_t d)
 {
   if ((sensorId == sId) || (sensorId == FrSkySportSensor::ID_IGNORE)) {
-    appId = aId;
+    appId = (aId - 1);
     data = d;
     return sId;
   } else {
