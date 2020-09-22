@@ -46,6 +46,7 @@ local supportedRadios =
     ["x9e-simu"] = supportedPlatforms.x9,
     ["x10-simu"] = supportedPlatforms.horus,
     ["x12s-simu"] = supportedPlatforms.horus,
+    ["tx16s-simu"] = supportedPlatforms.horus,
     ["x7"] = supportedPlatforms.x7,
     ["x7s"] = supportedPlatforms.x7,
     ["xlite"] = supportedPlatforms.x7,
